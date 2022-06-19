@@ -38,8 +38,8 @@ function User() {
       <p className="text-3xl font-bold mb-5 text-gray-700">All Users</p>
       <p className="mb-10">
         Contrary to popular belief, Lorem Ipsum is not simply random text. It
-        has roots in a piece of classical Latin literature from 45 BC, making it
-        over 2000 years old.
+        has roots in a piece of classNameical Latin literature from 45 BC,
+        making it over 2000 years old.
       </p>
       <div>
         <form className="flex">
@@ -76,16 +76,3 @@ function User() {
 }
 
 export default User;
-
-{
-  /* </label> */
-}
-{
-  /* <input
-                      type="checkbox"
-                      id="my-modal-3"
-                      class="modal-toggle"
-                    /> */
-}
-{
-}

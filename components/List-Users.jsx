@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Image from "next/image";
 function ListUsers({ listOfUsers, loading }) {
   if (loading) {
     return (
@@ -18,15 +18,16 @@ function ListUsers({ listOfUsers, loading }) {
               <div className="col-span-5">
                 <div className="flex">
                   <div className="mr-5">
-                    <img
+                    <Image
                       className="rounded-full"
                       src={listOfUsers.picture.thumbnail}
-                    ></img>
+                      alt="image user"
+                    ></Image>
                   </div>
                   <div>
                     <label
                       for="my-modal-6"
-                      class=" modal-button cursor-pointer"
+                      className=" modal-button cursor-pointer"
                     >
                       <div className="flex">
                         <p className="font-bold text-gray-700 mr-1">
@@ -46,32 +47,32 @@ function ListUsers({ listOfUsers, loading }) {
                     <input
                       type="checkbox"
                       id="my-modal-6"
-                      class="modal-toggle"
+                      className="modal-toggle"
                     />
-                    <div class="modal modal-bottom sm:modal-middle">
-                      <div class="modal-box">
+                    <div className="modal modal-bottom sm:modal-middle">
+                      <div className="modal-box">
                         <div className="flex">
-                          <h3 class="font-bold text-lg">
+                          <h3 className="font-bold text-lg">
                             {listOfUsers.location.street.name}
                           </h3>
-                          <h3 class="font-bold text-lg ml-5">
+                          <h3 className="font-bold text-lg ml-5">
                             {listOfUsers.location.street.number}
                           </h3>
                         </div>
                         <div className="flex">
-                          <h3 class="font-bold text-lg">
+                          <h3 className="font-bold text-lg">
                             {listOfUsers.location.city}
                           </h3>
-                          <h3 class="font-bold text-lg ml-5">
+                          <h3 className="font-bold text-lg ml-5">
                             {listOfUsers.location.state}
                           </h3>
-                          <h3 class="font-bold text-lg ml-5">
+                          <h3 className="font-bold text-lg ml-5">
                             {listOfUsers.location.country}
                           </h3>
                         </div>
 
-                        <div class="modal-action">
-                          <label for="my-modal-6" class="btn">
+                        <div className="modal-action">
+                          <label for="my-modal-6" className="btn">
                             Close
                           </label>
                         </div>
