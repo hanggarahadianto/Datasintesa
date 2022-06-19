@@ -18,15 +18,17 @@ function ListUsers({ listOfUsers, loading }) {
               <div className="col-span-5">
                 <div className="flex">
                   <div className="mr-5">
-                    <Image
+                    <img
                       className="rounded-full"
-                      src={listOfUsers.picture.thumbnail}
+                      src={listOfUsers.picture.large}
                       alt="image user"
-                    ></Image>
+                      width={50}
+                      height={50}
+                    />
                   </div>
                   <div>
                     <label
-                      for="my-modal-6"
+                      htmlFor="my-modal-6"
                       className=" modal-button cursor-pointer"
                     >
                       <div className="flex">
@@ -72,7 +74,7 @@ function ListUsers({ listOfUsers, loading }) {
                         </div>
 
                         <div className="modal-action">
-                          <label for="my-modal-6" className="btn">
+                          <label htmlFor="my-modal-6" className="btn">
                             Close
                           </label>
                         </div>
